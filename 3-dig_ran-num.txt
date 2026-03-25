@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+    int num;
+
+    srand(time(0));  // seed for randomness
+
+    num = (rand() % 900) + 100;  // range: 100 to 999
+
+    printf("3-digit random number = %d\n", num);
+
+    return 0;
+}
